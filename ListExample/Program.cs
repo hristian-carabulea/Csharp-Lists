@@ -7,8 +7,8 @@ namespace ListExample
     {
         static void Main()
         {
-            //create reference variable for List class & create object of List class
-            List<int> myListInt = new List<int>(10) { 10, 20, 30 };
+            //create reference variable for List class & create object of List class with no size predefined
+            List<int> myListInt = new List<int>() { 10, 20, 30 };
 
             //read elements using foreach loop
             Console.WriteLine("Using foreach loop:");
@@ -26,7 +26,8 @@ namespace ListExample
             }
             Console.WriteLine("End list");
 
-            List<char> myListChar = new List<char>(10) { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z' };
+            //create reference variable for List class & create object of List class with size of 26 elements predefined
+            List<char> myListChar = new List<char>(26) { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z' };
 
             //read elements using foreach loop
             Console.WriteLine("\nUsing foreach loop:");
